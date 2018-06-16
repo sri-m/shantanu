@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shantanu9</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': true %>
+  </head>
+
+<body>
+<div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+    
+		<!-- logo -->
+        <%= render :partial => "homes/logo" %>
+		<!-- menu -->
+		<%= render partial: "homes/menu" %>
+    </div>
+</div>
+
+<!-- header -->
+		<%= render partial: "homes/header" %>
+<div id="templatemo_content_wrapper">
+	<%= yield %>
+    
+    <%= render partial: "homes/sidebar" %> 
+    <!-- sidebar -->
+    
+    <div class="cleaner_h30"></div>
+    <%= render partial: "homes/latestprojects" %> v
+<!-- latestprojects -->
+<%= render partial: "homes/footer" %> 
+<!-- footer -->
+
+</body>
+</html>
